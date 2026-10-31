@@ -22,6 +22,15 @@ export function formatearMoneda(valor: number | string | null | undefined): stri
 }
 
 /**
+ * Formatea un número con separador de miles
+ */
+export function formatearNumero(valor: number | string | null | undefined): string {
+  const num = Number(valor ?? 0);
+  if (Number.isNaN(num)) return "0";
+  return num.toLocaleString("en-US");
+}
+
+/**
  * Formatea una fecha a DD/MM/YYYY
  */
 export function formatearFecha(fecha: Date | string | null | undefined): string {
