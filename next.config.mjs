@@ -7,6 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const nextConfig = {
   reactStrictMode: true,
   outputFileTracingRoot: __dirname,
+  allowedDevOrigins: ["192.168.56.1", "localhost", "127.0.0.1"],
   experimental: {
     serverActions: {
       bodySizeLimit: "2mb",
