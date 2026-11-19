@@ -201,7 +201,7 @@ export default function LoginPage() {
 
             {error && (
               <Alert
-                message="Error de autenticación"
+                title="Error de autenticación"
                 description={error}
                 type="error"
                 showIcon
